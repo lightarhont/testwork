@@ -11,13 +11,15 @@ abstract class Commonmanager extends Controller
   public function before()
   {
 
+				session_start();
+				
 				$this->lang = Route::$lang;
     
 				if(isset($_SESSION['userid'])):
-						echo 'session';
+						//echo 'session';
 				else:
 						if(isset($_COOKIE['userid'])):
-								echo 'cookie';
+								//echo 'cookie';
 						else:
 								header( 'Location: '.$this->base.$this->lang, true, 301 );
 						endif;

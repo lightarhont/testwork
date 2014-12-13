@@ -1,0 +1,36 @@
+body
+{
+   background: url(/public/images/bg.png) repeat; 
+}
+
+div.mf {
+width: 960px;
+background-color: white;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+}
+
+div.lang {
+ width: 100%;
+ background-color: #fff;
+ text-align: right;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica; 
+}
+
+div.lang a {
+font-weight: bold;
+color: #3151A2;
+text-decoration: none;
+margin-right: 20px;
+}
+
+div.lang a:hover {
+text-decoration: underline;
+}

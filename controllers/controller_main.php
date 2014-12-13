@@ -10,8 +10,6 @@ class Controller_Main extends Common
         
         //new Model;
         
-        $conn = Model::getInstance()->rb;
-        $reviews = $conn->find('reviews');
         $data = array('lang' => $this->lang);
         $tpl = $this->view->generate("Main.php", $data);
         $data = $this->data;
@@ -94,7 +92,7 @@ class Controller_Main extends Common
             }
             catch (Exception $e)
             {
-                echo "Не удалось сохранить!";
+                exit("Не удалось сохранить!");
             }
         else:
             $this->action_index();

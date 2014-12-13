@@ -30,8 +30,8 @@ class Controller_Auth extends Common
                 $_SESSION['userid'] = $user->id;
                 setcookie("userid", $user->id, time()+60*60*24*10);
                 if(isset($_SESSION['userid'])):
-                    echo $_SESSION['userid'];
-                    //header( 'Location: '.$this->base.$this->lang.'/manager');
+                    //echo $_SESSION['userid'];
+                    header( 'Location: '.$this->base.$this->lang.'/manager/index/created/desc');
                 else:
                     $this->action_index();
                 endif;
